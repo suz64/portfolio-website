@@ -1,343 +1,992 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CP0ERQ6JHH"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-CP0ERQ6JHH');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-Sujan kandel </title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Sujan Kandel - IT student and digital solutions developer from Butwal, Nepal. Specializing in web development, coding, and digital innovation. View my portfolio, projects, and services.">
-    <meta name="keywords" content="Sujan Kandel, portfolio, web development, IT student, digital solutions, Butwal, Nepal, project, contact, software developer, coding">
-    <meta name="author" content="Sujan Kandel">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Home sujan kandel" />
-	<meta property="og:url" content="https://sujan18.com.np/" />
-	<meta property="og:site_name" content="sujan kandel" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"sujan18.com.np","url":"sujan18.com.np","name":"Home - sujan kandel","isPartOf":{"@id":"https://sujan18.com.np/#website"},"about":{"@id":"https://sujan18.com.np/#/schema/person/7f29489d000edc855cf057c1a747b750"},"datePublished":"2025-02-12T07:36:34+00:00","dateModified":"2025-05-29T07:36:34+00:00","breadcrumb":{"@id":"https://sujan18.com.np/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://sujan18.com.np/"]}]},{"@type":"BreadcrumbList","@id":"https://sujan18.com.np/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://sujan18com.np/#website","url":"https://sujan18.com.np/","name":"sujan kandel","description":"Educator and IT Consultant From Nepal","publisher":{"@id":"https://sujan18.com.np/#/schema/person/7f29489d000edc855cf057c1a747b750"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://sujan18.com.np/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":["Person","Organization"],"@id":"https:/sujan18.com.np/#/schema/person/7f29489d000edc855cf057c1a747b750","name":"iamsujan","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://sujan18.com.np/#/schema/person/image/","url":"https://sujan18.com.np/wp-content/uploads/2023/04/portfolio-1.png","contentUrl":"https://sujan18.com.np/wp-content/uploads/2023/04/portfolio-1.png","width":268,"height":49,"caption":"iamsujan},"logo":{"@id":"https://sujan18.com.np/#/schema/person/image/"},"sameAs":["https://sujan18.com.np"]}]}</script>
-	<!-- / Yoast SEO plugin. -->
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://sujankandel.com.np" />
-    
-    <!-- Favicon -->
-    <link rel="icon" href="suj.jpg" type="image/gif/jpg">
-    
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Sujan Kandel - IT Student & Digital Solutions Developer">
-    <meta property="og:description" content="IT student and digital solutions developer specializing in web development and coding. View my portfolio and projects.">
-    <meta property="og:image" content="suj.jpg">
-    <meta property="og:url" content="https://sujankandel.com.np">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sujan Kandel - IT Student & Digital Solutions Developer">
-    <meta name="twitter:description" content="IT student and digital solutions developer specializing in web development and coding. View my portfolio and projects.">
-    <meta name="twitter:image" content="suj.jpg">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <!-- Schema.org Markup -->
-    <script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "Person",
-        "name": "Sujan Kandel",
-        "url": "https://sujankandel.com.np",
-        "image": "suj.jpg",
-        "sameAs": [
-            "https://github.com/sujankandel",
-            "https://linkedin.com/in/sujankandel"
-        ],
-        "jobTitle": "IT Student & Digital Solutions Developer",
-        "description": "IT student and digital solutions developer from Butwal, Nepal",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Butwal",
-            "addressRegion": "Nepal"
-        },
-        "alumniOf": {
-            "@type": "EducationalOrganization",
-            "name": "Korean Nepal Polytechnic Institute"
+    <title>Beach Runner Challenge</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
         }
-    }
-    </script>
+        
+        #game-container {
+            position: relative;
+            width: 800px;
+            height: 400px;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+        
+        #game-canvas {
+            background-color: #87CEEB;
+            display: block;
+        }
+        
+        #ground {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #F5DEB3;
+            background-image: url('https://iili.io/3uHCv0N.png');
+            background-size: cover;
+        }
+        
+        #ui {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-size: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            display: flex;
+            gap: 20px;
+        }
+        
+        #start-screen, #game-over-screen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            z-index: 10;
+        }
+        
+        #game-over-screen {
+            display: none;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+            color: #FF69B4;
+        }
+        
+        button {
+            padding: 12px 30px;
+            font-size: 20px;
+            background: linear-gradient(45deg, #FF512F, #DD2476);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+        
+        #controls {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .control-btn {
+            padding: 15px 25px;
+            font-size: 18px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        #power-up-indicator {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            font-size: 16px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            display: none;
+            background: rgba(0,0,0,0.5);
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+        
+        .power-up-active {
+            animation: pulse 1s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header role="banner">
-        <div class="container">
-            <div class="logo">
-                <img src="logo.jpeg" alt="Sujan Kandel Logo">
-            </div>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                   
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#education">Education</a></li>
-                </ul>
-            </nav>
+    <div id="game-container">
+        <canvas id="game-canvas" width="800" height="400"></canvas>
+        <div id="ground"></div>
+        
+        <div id="ui">
+            <div id="score">Score: 0</div>
+            <div id="coins">Coins: 0</div>
         </div>
-    </header>
+        
+        <div id="power-up-indicator"></div>
+        
+        <div id="start-screen">
+            <h1>BEACH RUNNER CHALLENGE</h1>
+            <p>Run, jump, and collect treasures on the beach!</p>
+            <button id="start-btn">START GAME</button>
+        </div>
+        
+        <div id="game-over-screen">
+            <h1>GAME OVER</h1>
+            <p id="final-score">Your Score: 0</p>
+            <p id="final-coins">Treasure Collected: 0</p>
+            <button id="restart-btn">PLAY AGAIN</button>
+        </div>
+        
+        <div id="controls">
+            <div class="control-btn" id="jump-btn">JUMP</div>
+            <div class="control-btn" id="slide-btn">SLIDE</div>
+        </div>
+    </div>
 
-    <!-- Hero Section -->
-    <main role="main">
-        <section id="home" class="hero" aria-label="Introduction">
-            <div class="container">
-                <h1>Namaste from Sujan kandel </h1>
-                <p> A passionate IT student and digital solutions enthusiast.</p>
-                <a href="#about" class="cta-button">Learn More About Me</a>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about">
-            <div class="container">
-                <div class="about-container">
-                    <div class="profile-image-container">
-                        <img src="suj.jpg" alt="Sujan Kandel" class="profile-image">
-                    </div>
-                    <div class="about-content">
-                        <h2>About Me</h2>
-                        <p>I am Sujan Kandel, originally from Rampur-10, Palpa, and currently residing in Butwal. I am pursuing a Diploma in IT (3rd Semester) with a deep passion for coding, technology, and digital innovation. My interest lies in developing digital solutions that solve real-world problems. I strive to maintain a balanced lifestyle, effectively managing academics, projects, and personal growth.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Vision & Goals Section -->
-        <section id="vision-goals" class="vision-goals">
-            <div class="container">
-                <div class="vision-section animate-section">
-                    <h2><span class="highlight">My Vision</span></h2>
-                    <div class="vision-content">
-                        <div class="vision-card">
-                            <i class="fas fa-lightbulb"></i>
-                            <p>To become a leading innovator in the tech industry, creating solutions that make a positive impact on society while inspiring others to pursue their dreams in technology.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="goals-section animate-section">
-                    <h2><span class="highlight">My Goals</span></h2>
-                    <div class="goals-grid">
-                        <div class="goal-card">
-                            <i class="fas fa-graduation-cap"></i>
-                            <h3>Educational Excellence</h3>
-                            <p>Excel in my IT diploma and pursue advanced studies in technology</p>
-                        </div>
-                        <div class="goal-card">
-                            <i class="fas fa-code"></i>
-                            <h3>Technical Mastery</h3>
-                            <p>Master multiple programming languages and stay current with emerging technologies</p>
-                        </div>
-                        <div class="goal-card">
-                            <i class="fas fa-project-diagram"></i>
-                            <h3>Project Portfolio</h3>
-                            <p>Build a diverse portfolio of innovative projects that solve real-world problems</p>
-                        </div>
-                        <div class="goal-card">
-                            <i class="fas fa-users"></i>
-                            <h3>Community Impact</h3>
-                            <p>Contribute to the tech community through mentorship and knowledge sharing</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Enhanced Education Journey -->
-        <section id="education" class="education">
-            <div class="container">
-                <h2><span class="highlight">Educational Journey</span></h2>
-                <div class="education-timeline">
-                    <div class="timeline-entry current">
-                        <div class="timeline-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <div class="timeline-content slide-in-right">
-                            <div class="entry-header">
-                                <h3>Diploma in Information Technology</h3>
-                                <span class="date">2080 - Present</span>
-                            </div>
-                            <div class="institution">
-                                <i class="fas fa-university"></i>
-                                Korean Nepal Polytechnic Institute
-                            </div>
-                            <div class="details">
-                                <ul>
-                                    <li>Specializing in software development and web technologies</li>
-                                    <li>Currently in 3rd semester with focus on practical applications</li>
-                                    <li>Participating in various technical projects and workshops</li>
-                                </ul>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 60%">
-                                    <span>In Progress</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-entry">
-                        <div class="timeline-icon">
-                            <i class="fas fa-school"></i>
-                        </div>
-                        <div class="timeline-content slide-in-left">
-                            <div class="entry-header">
-                                <h3>Secondary Education (SEE)</h3>
-                                <span class="date">2076 - 2080</span>
-                            </div>
-                            <div class="institution">
-                                <i class="fas fa-building"></i>
-                                Shree Radha Damodar Gyan Jyoti Sanskrit Secondary School
-                            </div>
-                            <div class="details">
-                                <ul>
-                                    <li>Completed secondary education with excellent academic performance</li>
-                                    <li>Participated in various extracurricular activities</li>
-                                    <li>Developed strong foundation in science and mathematics</li>
-                                </ul>
-                            </div>
-                            <div class="achievement-badge">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Completed</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="services">
-            <div class="container">
-                <h2>My Services</h2>
-                <div class="service-list">
-                    <div class="service-item">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Digital Solutions</h3>
-                        <p>I specialize in developing digital solutions to solve real-world problems.</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-code"></i>
-                        <h3>Coding</h3>
-                        <p>I enjoy coding and have experience in programming languages like HTML, CSS, JavaScript, and Python.</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-users"></i>
-                        <h3>Team Collaboration</h3>
-                        <p>I excel in collaborating with teams to deliver high-quality projects on time.</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-bullhorn"></i>
-                        <h3>Consultation</h3>
-                        <p>I offer consultation services to help businesses find the right digital solutions.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2>My Projects</h2>
-                <div class="project-gallery">
-                    <div class="project-item">
-                        <img src="download (1).jpg" alt="Project 1">
-                        <h3> Student management system </h3>
-                        <p>A Student Management System (SMS) in C manages student data such as personal information, courses, grades, and attendance. It allows adding, updating, and displaying student records while tracking academic progress and generating reports.</p>
-                    </div>
-                    <div class="project-item">
-                        <img src="download (2).jpg" alt="Project 2">
-                        <h3>Libary management system</h3>
-                        <p>A Library Management System (LMS) in C is a software that handles book cataloging, borrowing, and returning processes. It manages records of books, users, and transactions, ensuring efficient tracking of library resources.</p>
+    <script>
+        // Game variables
+        const canvas = document.getElementById('game-canvas');
+        const ctx = canvas.getContext('2d');
+        const startScreen = document.getElementById('start-screen');
+        const gameOverScreen = document.getElementById('game-over-screen');
+        const startBtn = document.getElementById('start-btn');
+        const restartBtn = document.getElementById('restart-btn');
+        const scoreElement = document.getElementById('score');
+        const coinsElement = document.getElementById('coins');
+        const finalScoreElement = document.getElementById('final-score');
+        const finalCoinsElement = document.getElementById('final-coins');
+        const jumpBtn = document.getElementById('jump-btn');
+        const slideBtn = document.getElementById('slide-btn');
+        const powerUpIndicator = document.getElementById('power-up-indicator');
+        
+        let gameRunning = false;
+        let score = 0;
+        let coins = 0;
+        let speed = 5;
+        let gameSpeed = 5;
+        let gravity = 0.5;
+        let obstacles = [];
+        let coinItems = [];
+        let powerUps = [];
+        let animationId;
+        let obstacleTimer;
+        let coinTimer;
+        let powerUpTimer;
+        let backgroundOffset = 0;
+        let clouds = [];
+        
+        // Create initial clouds
+        for (let i = 0; i < 5; i++) {
+            clouds.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * 100,
+                width: 50 + Math.random() * 100,
+                speed: 0.5 + Math.random()
+            });
+        }
+        
+        // Player object with animation
+        const player = {
+            x: 100,
+            y: 270,
+            width: 40,
+            height: 80,
+            velocityY: 0,
+            jumping: false,
+            sliding: false,
+            slideDuration: 0,
+            powerUp: null,
+            powerUpTime: 0,
+            frame: 0,
+            runCycle: 0,
+            
+            draw: function() {
+                ctx.save();
+                
+                // Draw animated running woman based on reference
+                if (this.sliding) {
+                    this.drawSliding();
+                } else if (this.jumping) {
+                    this.drawJumping();
+                } else {
+                    this.drawRunning();
+                }
+                
+                // Draw power-up effects
+                if (this.powerUp === 'shield') {
+                    ctx.strokeStyle = 'rgba(0, 191, 255, 0.7)';
+                    ctx.lineWidth = 3;
+                    ctx.beginPath();
+                    ctx.arc(this.x + this.width/2, this.y + this.height/2, this.width + 10, 0, Math.PI * 2);
+                    ctx.stroke();
+                }
+                
+                ctx.restore();
+            },
+            
+            drawRunning: function() {
+                this.runCycle = (this.runCycle + 0.2) % 8;
+                const cycleFrame = Math.floor(this.runCycle);
+                
+                // Body color based on power-up
+                const bodyColor = this.powerUp === 'shield' ? '#00BFFF' : '#FF69B4';
+                const skinColor = '#FFDBAC';
+                const hairColor = '#8B4513';
+                const braColor = '#FFFFFF';
+                const shortsColor = '#FF0000';
+                
+                // Draw based on running cycle
+                switch(cycleFrame) {
+                    case 0:
+                    case 4:
+                        // Neutral position
+                        this.drawBody(skinColor, bodyColor, braColor, shortsColor, hairColor, 0, 0);
+                        break;
+                    case 1:
+                    case 5:
+                        // Right leg forward
+                        this.drawBody(skinColor, bodyColor, braColor, shortsColor, hairColor, 5, -3);
+                        break;
+                    case 2:
+                    case 6:
+                        // Neutral position
+                        this.drawBody(skinColor, bodyColor, braColor, shortsColor, hairColor, 0, 0);
+                        break;
+                    case 3:
+                    case 7:
+                        // Left leg forward
+                        this.drawBody(skinColor, bodyColor, braColor, shortsColor, hairColor, -5, -3);
+                        break;
+                }
+            },
+            
+            drawJumping: function() {
+                const skinColor = '#FFDBAC';
+                const bodyColor = this.powerUp === 'shield' ? '#00BFFF' : '#FF69B4';
+                const braColor = '#FFFFFF';
+                const shortsColor = '#FF0000';
+                const hairColor = '#8B4513';
+                
+                // Jumping pose - legs together, arms up
+                ctx.fillStyle = bodyColor;
+                ctx.beginPath(); // Body
+                ctx.arc(this.x + this.width/2, this.y + this.height/2, this.width/2, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Head
+                ctx.fillStyle = skinColor;
+                ctx.beginPath();
+                ctx.arc(this.x + this.width/2, this.y + this.height/4, this.width/3, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Hair
+                ctx.fillStyle = hairColor;
+                ctx.beginPath();
+                ctx.arc(this.x + this.width/2, this.y + this.height/4 - 5, this.width/3 + 5, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Arms up
+                ctx.fillStyle = skinColor;
+                ctx.fillRect(this.x + this.width/2 - 25, this.y + this.height/3, 10, 30);
+                ctx.fillRect(this.x + this.width/2 + 15, this.y + this.height/3, 10, 30);
+                
+                // Legs together
+                ctx.fillStyle = skinColor;
+                ctx.fillRect(this.x + this.width/2 - 10, this.y + this.height/2 + 10, 20, 30);
+                
+                // Bra
+                ctx.fillStyle = braColor;
+                ctx.fillRect(this.x + this.width/2 - 15, this.y + this.height/3 + 5, 30, 10);
+                
+                // Shorts
+                ctx.fillStyle = shortsColor;
+                ctx.fillRect(this.x + this.width/2 - 15, this.y + this.height/2, 30, 10);
+            },
+            
+            drawSliding: function() {
+                const skinColor = '#FFDBAC';
+                const bodyColor = this.powerUp === 'shield' ? '#00BFFF' : '#FF69B4';
+                const braColor = '#FFFFFF';
+                const shortsColor = '#FF0000';
+                const hairColor = '#8B4513';
+                
+                // Sliding pose - legs extended, body low
+                ctx.fillStyle = bodyColor;
+                ctx.beginPath(); // Body
+                ctx.ellipse(this.x + this.width/2, this.y + this.height/2 + 20, 
+                            this.width/2, this.width/3, 0, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Head
+                ctx.fillStyle = skinColor;
+                ctx.beginPath();
+                ctx.arc(this.x + this.width/2 + 10, this.y + this.height/3 + 10, this.width/3, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Hair
+                ctx.fillStyle = hairColor;
+                ctx.beginPath();
+                ctx.arc(this.x + this.width/2 + 10, this.y + this.height/3 + 5, this.width/3 + 5, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Arms extended
+                ctx.fillStyle = skinColor;
+                ctx.fillRect(this.x + this.width/2 - 30, this.y + this.height/2, 60, 10);
+                
+                // Legs extended
+                ctx.fillStyle = skinColor;
+                ctx.fillRect(this.x + this.width/2 - 35, this.y + this.height/2 + 15, 15, 30);
+                ctx.fillRect(this.x + this.width/2 + 20, this.y + this.height/2 + 15, 15, 30);
+                
+                // Bra
+                ctx.fillStyle = braColor;
+                ctx.fillRect(this.x + this.width/2 - 10, this.y + this.height/3 + 15, 20, 10);
+                
+                // Shorts
+                ctx.fillStyle = shortsColor;
+                ctx.fillRect(this.x + this.width/2 - 15, this.y + this.height/2 + 5, 30, 10);
+            },
+            
+            drawBody: function(skinColor, bodyColor, braColor, shortsColor, hairColor, legOffset, armOffset) {
+                // Body
+                ctx.fillStyle = bodyColor;
+                ctx.beginPath();
+                ctx.arc(this.x + this.width/2, this.y + this.height/2, this.width/2, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Head
+                ctx.fillStyle = skinColor;
+                ctx.beginPath();
+                ctx.arc(this.x + this.width/2, this.y + this.height/4, this.width/3, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Hair
+                ctx.fillStyle = hairColor;
+                ctx.beginPath();
+                ctx.arc(this.x + this.width/2, this.y + this.height/4 - 5, this.width/3 + 5, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Arms
+                ctx.fillStyle = skinColor;
+                ctx.fillRect(this.x + this.width/2 - 20 + armOffset, this.y + this.height/3, 10, 25);
+                ctx.fillRect(this.x + this.width/2 + 10 + armOffset, this.y + this.height/3, 10, 25);
+                
+                // Legs
+                ctx.fillStyle = skinColor;
+                ctx.fillRect(this.x + this.width/2 - 20 + legOffset, this.y + this.height/2 + 10, 10, 30);
+                ctx.fillRect(this.x + this.width/2 + 10 - legOffset, this.y + this.height/2 + 10, 10, 30);
+                
+                // Bra
+                ctx.fillStyle = braColor;
+                ctx.fillRect(this.x + this.width/2 - 15, this.y + this.height/3 + 5, 30, 10);
+                
+                // Shorts
+                ctx.fillStyle = shortsColor;
+                ctx.fillRect(this.x + this.width/2 - 15, this.y + this.height/2, 30, 10);
+            },
+            
+            update: function() {
+                this.frame++;
+                
+                // Apply gravity
+                this.velocityY += gravity;
+                this.y += this.velocityY;
+                
+                // Keep player on ground
+                if (this.y > 270) {
+                    this.y = 270;
+                    this.velocityY = 0;
+                    this.jumping = false;
+                }
+                
+                // Handle sliding
+                if (this.sliding) {
+                    this.slideDuration--;
+                    if (this.slideDuration <= 0) {
+                        this.sliding = false;
+                        this.height = 80;
+                    }
+                }
+                
+                // Handle power-up duration
+                if (this.powerUp) {
+                    this.powerUpTime--;
+                    if (this.powerUpTime <= 0) {
+                        this.powerUp = null;
+                        powerUpIndicator.style.display = 'none';
+                        gameSpeed = speed; // Reset speed if it was changed
+                    } else {
+                        // Update power up indicator
+                        const secondsLeft = Math.ceil(this.powerUpTime / 60);
+                        powerUpIndicator.textContent = `${this.powerUp.toUpperCase()}: ${secondsLeft}s`;
                         
-                    </div>
-                    <div class="project-item">
-                        <img src="download.png" alt="project 3">
-                        <h3>Simple calculator</h3>
-                        <p>A simple calculator in C performs basic arithmetic operations like addition, subtraction, multiplication, and division. It takes user input, processes the operation, and displays the result.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <h3>Quick Links</h3>
-                    <div class="footer-nav">
-                        <a href="#home"><i class="fas fa-home"></i> Home</a>
-                        <a href="#about"><i class="fas fa-user"></i> About</a>
-                        <a href="#projects"><i class="fas fa-code-branch"></i> Projects</a>
-                        <a href="#services"><i class="fas fa-cogs"></i> Services</a>
-                    </div>
-                </div>
-                <div class="footer-right">
-                    <h3>Contact Info</h3>
-                    <div class="contact-section">
-                        <div class="contact-details">
-                            <p><i class="fas fa-map-marker-alt"></i> Butwal, Nepal</p>
-                            <p><i class="fas fa-envelope"></i> sujankandel61@gmail.com</p>
-                        </div>
-                        <div class="social-media-grid">
-                            <a href ="https://github.com/suz64" target="_blank" class="social-item" aria-label="GitHub">
-                                <i class="fab fa-github"></i>
-                                <span>GitHub</span>
-                            </a>
-                            <a href="https://linkedin.com/in/sujankandel" class="social-item" aria-label="LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                                <span>LinkedIn</span>
-                            </a>
-                            <a href="https://www.instagram.com/sujan_kandel_02/" class="social-item" aria-label="Instagram">
-                                <i class="fab fa-instagram"></i>
-                                <span>Instagram</span>
-                            </a>
-                            <a href="https://www.facebook.com/suzan1207" class="social-item" aria-label="Facebook">
-                                <i class="fab fa-facebook"></i>
-                                <span>Facebook</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Sujan Kandel. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <button id="scroll-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script src="script.js"></script>
+                        // Apply power-up effects
+                        if (this.powerUp === 'slowMotion') {
+                            gameSpeed = speed * 0.6;
+                        }
+                    }
+                }
+            },
+            
+            jump: function() {
+                if (!this.jumping && !this.sliding) {
+                    this.velocityY = -12;
+                    this.jumping = true;
+                }
+            },
+            
+            slide: function() {
+                if (!this.jumping && !this.sliding) {
+                    this.sliding = true;
+                    this.slideDuration = 30;
+                    this.height = 60;
+                }
+            }
+        };
+        
+        // Obstacle object
+        function createObstacle() {
+            const types = [
+                { width: 40, height: 40, color: '#FF6347', name: 'beach ball' }, 
+                { width: 60, height: 30, color: '#A0522D', name: 'driftwood' }, 
+                { width: 50, height: 50, color: '#4682B4', name: 'cooler' },
+                { width: 30, height: 60, color: '#32CD32', name: 'umbrella' }
+            ];
+            
+            const type = types[Math.floor(Math.random() * types.length)];
+            
+            return {
+                x: canvas.width,
+                y: 330 - type.height,
+                width: type.width,
+                height: type.height,
+                color: type.color,
+                name: type.name,
+                
+                draw: function() {
+                    ctx.fillStyle = this.color;
+                    ctx.fillRect(this.x, this.y, this.width, this.height);
+                    
+                    // Add some details based on obstacle type
+                    if (this.name === 'beach ball') {
+                        ctx.strokeStyle = 'white';
+                        ctx.lineWidth = 2;
+                        ctx.beginPath();
+                        ctx.arc(this.x + this.width/2, this.y + this.height/2, this.width/2 - 2, 0, Math.PI * 2);
+                        ctx.stroke();
+                        
+                        ctx.beginPath();
+                        ctx.moveTo(this.x + this.width/2, this.y + 5);
+                        ctx.lineTo(this.x + this.width/2, this.y + this.height - 5);
+                        ctx.stroke();
+                        
+                        ctx.beginPath();
+                        ctx.moveTo(this.x + 5, this.y + this.height/2);
+                        ctx.lineTo(this.x + this.width - 5, this.y + this.height/2);
+                        ctx.stroke();
+                    } else if (this.name === 'umbrella') {
+                        ctx.fillStyle = '#FF0000';
+                        ctx.beginPath();
+                        ctx.moveTo(this.x + this.width/2, this.y);
+                        ctx.lineTo(this.x + this.width, this.y + this.height/2);
+                        ctx.lineTo(this.x, this.y + this.height/2);
+                        ctx.closePath();
+                        ctx.fill();
+                        
+                        ctx.fillStyle = '#8B4513';
+                        ctx.fillRect(this.x + this.width/2 - 3, this.y + this.height/2, 6, this.height/2);
+                    }
+                },
+                
+                update: function() {
+                    this.x -= gameSpeed;
+                }
+            };
+        }
+        
+        // Coin object (treasure)
+        function createCoin() {
+            const yPos = Math.random() > 0.5 ? 250 : 200;
+            const types = ['gold', 'silver', 'gem'];
+            const type = types[Math.floor(Math.random() * types.length)];
+            
+            let color1, color2;
+            switch(type) {
+                case 'gold':
+                    color1 = '#FFD700';
+                    color2 = '#DAA520';
+                    break;
+                case 'silver':
+                    color1 = '#C0C0C0';
+                    color2 = '#A9A9A9';
+                    break;
+                case 'gem':
+                    color1 = '#FF1493';
+                    color2 = '#9400D3';
+                    break;
+            }
+            
+            return {
+                x: canvas.width,
+                y: yPos,
+                width: 20,
+                height: 20,
+                type: type,
+                value: type === 'gold' ? 5 : (type === 'silver' ? 2 : 10),
+                collected: false,
+                frame: 0,
+                
+                draw: function() {
+                    if (!this.collected) {
+                        ctx.save();
+                        ctx.beginPath();
+                        
+                        if (this.type === 'gem') {
+                            // Diamond shape for gem
+                            ctx.moveTo(this.x + this.width/2, this.y);
+                            ctx.lineTo(this.x + this.width, this.y + this.height/2);
+                            ctx.lineTo(this.x + this.width/2, this.y + this.height);
+                            ctx.lineTo(this.x, this.y + this.height/2);
+                            ctx.closePath();
+                        } else {
+                            // Circle for coins
+                            ctx.arc(this.x + this.width/2, this.y + this.height/2, this.width/2, 0, Math.PI * 2);
+                        }
+                        
+                        // Gradient
+                        const gradient = ctx.createRadialGradient(
+                            this.x + this.width/2, this.y + this.height/2, 0,
+                            this.x + this.width/2, this.y + this.height/2, this.width/2
+                        );
+                        gradient.addColorStop(0, color1);
+                        gradient.addColorStop(1, color2);
+                        
+                        ctx.fillStyle = gradient;
+                        ctx.fill();
+                        
+                        // Shine effect
+                        if (this.type !== 'gem') {
+                            ctx.beginPath();
+                            ctx.arc(this.x + this.width/2 + 3, this.y + this.height/2 - 3, 3, 0, Math.PI * 2);
+                            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                            ctx.fill();
+                        }
+                        
+                        ctx.restore();
+                    }
+                },
+                
+                update: function() {
+                    this.x -= gameSpeed;
+                    this.frame++;
+                    
+                    // Bouncing animation
+                    if (this.frame % 10 === 0) {
+                        this.y += Math.sin(this.frame / 5) * 2;
+                    }
+                }
+            };
+        }
+        
+        // Power-up object
+        function createPowerUp() {
+            const types = [
+                { type: 'doublePoints', color: '#FF00FF', name: '2X Points', duration: 300 },
+                { type: 'slowMotion', color: '#00FF00', name: 'Slow Motion', duration: 200 },
+                { type: 'shield', color: '#00BFFF', name: 'Shield', duration: 400 },
+                { type: 'magnet', color: '#FF4500', name: 'Coin Magnet', duration: 350 }
+            ];
+            
+            const powerUpType = types[Math.floor(Math.random() * types.length)];
+            
+            return {
+                x: canvas.width,
+                y: 150 + Math.random() * 100,
+                width: 30,
+                height: 30,
+                type: powerUpType.type,
+                name: powerUpType.name,
+                color: powerUpType.color,
+                duration: powerUpType.duration,
+                collected: false,
+                
+                draw: function() {
+                    if (!this.collected) {
+                        ctx.save();
+                        ctx.fillStyle = this.color;
+                        
+                        // Different shapes for different power-ups
+                        switch(this.type) {
+                            case 'doublePoints':
+                                // Star shape
+                                ctx.beginPath();
+                                for (let i = 0; i < 5; i++) {
+                                    ctx.lineTo(
+                                        this.x + this.width/2 + this.width/2 * Math.cos(i * 2 * Math.PI / 5),
+                                        this.y + this.height/2 + this.height/2 * Math.sin(i * 2 * Math.PI / 5)
+                                    );
+                                    ctx.lineTo(
+                                        this.x + this.width/2 + this.width/4 * Math.cos((i * 2 * Math.PI / 5) + Math.PI / 5),
+                                        this.y + this.height/2 + this.height/4 * Math.sin((i * 2 * Math.PI / 5) + Math.PI / 5)
+                                    );
+                                }
+                                ctx.closePath();
+                                ctx.fill();
+                                break;
+                            case 'slowMotion':
+                                // Clock shape
+                                ctx.beginPath();
+                                ctx.arc(this.x + this.width/2, this.y + this.height/2, this.width/2, 0, Math.PI * 2);
+                                ctx.fill();
+                                ctx.fillStyle = 'white';
+                                // Clock hands
+                                ctx.fillRect(this.x + this.width/2 - 1, this.y + this.height/2 - 8, 2, 8);
+                                ctx.fillRect(this.x + this.width/2 - 8, this.y + this.height/2 - 1, 8, 2);
+                                break;
+                            case 'shield':
+                                // Shield shape
+                                ctx.beginPath();
+                                ctx.moveTo(this.x + this.width/2, this.y);
+                                ctx.quadraticCurveTo(this.x + this.width, this.y, this.x + this.width, this.y + this.height/2);
+                                ctx.quadraticCurveTo(this.x + this.width, this.y + this.height, this.x + this.width/2, this.y + this.height);
+                                ctx.quadraticCurveTo(this.x, this.y + this.height, this.x, this.y + this.height/2);
+                                ctx.quadraticCurveTo(this.x, this.y, this.x + this.width/2, this.y);
+                                ctx.closePath();
+                                ctx.fill();
+                                break;
+                            case 'magnet':
+                                // Magnet shape
+                                ctx.beginPath();
+                                ctx.arc(this.x + this.width/3, this.y + this.height/2, this.width/4, 0, Math.PI * 2);
+                                ctx.arc(this.x + 2*this.width/3, this.y + this.height/2, this.width/4, 0, Math.PI * 2);
+                                ctx.fill();
+                                ctx.fillRect(this.x + this.width/3 - this.width/4, this.y + this.height/2 - this.width/8, this.width/2 + this.width/4, this.width/4);
+                                break;
+                        }
+                        ctx.restore();
+                    }
+                },
+                
+                update: function() {
+                    this.x -= gameSpeed;
+                }
+            };
+        }
+        
+        // Draw background with clouds
+        function drawBackground() {
+            // Sky gradient
+            const skyGradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+            skyGradient.addColorStop(0, '#87CEEB');
+            skyGradient.addColorStop(1, '#E0F7FA');
+            ctx.fillStyle = skyGradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw clouds
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+            clouds.forEach(cloud => {
+                ctx.beginPath();
+                ctx.arc(cloud.x, cloud.y, cloud.width/3, 0, Math.PI * 2);
+                ctx.arc(cloud.x + cloud.width/3, cloud.y - cloud.width/6, cloud.width/4, 0, Math.PI * 2);
+                ctx.arc(cloud.x + cloud.width/2, cloud.y, cloud.width/3, 0, Math.PI * 2);
+                ctx.arc(cloud.x + cloud.width/3, cloud.y + cloud.width/6, cloud.width/4, 0, Math.PI * 2);
+                ctx.fill();
+            });
+            
+            // Ocean in the distance
+            ctx.fillStyle = 'rgba(30, 144, 255, 0.3)';
+            ctx.fillRect(0, 340, canvas.width, 20);
+            
+            // Sun
+            ctx.fillStyle = '#FFD700';
+            ctx.beginPath();
+            ctx.arc(700, 80, 40, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Sun rays
+            ctx.strokeStyle = 'rgba(255, 215, 0, 0.5)';
+            ctx.lineWidth = 3;
+            for (let i = 0; i < 12; i++) {
+                ctx.beginPath();
+                ctx.moveTo(700, 80);
+                ctx.lineTo(
+                    700 + Math.cos(i * Math.PI / 6) * 60,
+                    80 + Math.sin(i * Math.PI / 6) * 60
+                );
+                ctx.stroke();
+            }
+        }
+        
+        // Update clouds position
+        function updateClouds() {
+            clouds.forEach(cloud => {
+                cloud.x -= cloud.speed;
+                if (cloud.x < -cloud.width) {
+                    cloud.x = canvas.width + cloud.width;
+                    cloud.y = Math.random() * 100;
+                }
+            });
+        }
+        
+        // Check collision between two objects
+        function checkCollision(obj1, obj2) {
+            return obj1.x < obj2.x + obj2.width &&
+                   obj1.x + obj1.width > obj2.x &&
+                   obj1.y < obj2.y + obj2.height &&
+                   obj1.y + obj1.height > obj2.y;
+        }
+        
+        // Start game
+        function startGame() {
+            gameRunning = true;
+            score = 0;
+            coins = 0;
+            speed = 5;
+            gameSpeed = 5;
+            obstacles = [];
+            coinItems = [];
+            powerUps = [];
+            
+            player.y = 270;
+            player.velocityY = 0;
+            player.jumping = false;
+            player.sliding = false;
+            player.powerUp = null;
+            player.runCycle = 0;
+            
+            scoreElement.textContent = `Score: ${score}`;
+            coinsElement.textContent = `Treasure: ${coins}`;
+            
+            startScreen.style.display = 'none';
+            gameOverScreen.style.display = 'none';
+            
+            // Start obstacle timer
+            obstacleTimer = setInterval(() => {
+                if (Math.random() < 0.02) {
+                    obstacles.push(createObstacle());
+                }
+            }, 100);
+            
+            // Start coin timer
+            coinTimer = setInterval(() => {
+                if (Math.random() < 0.03) {
+                    coinItems.push(createCoin());
+                }
+            }, 100);
+            
+            // Start power-up timer
+            powerUpTimer = setInterval(() => {
+                if (Math.random() < 0.005 && powerUps.length < 1) {
+                    powerUps.push(createPowerUp());
+                }
+            }, 100);
+            
+            // Start game loop
+            gameLoop();
+        }
+        
+        // Game over
+        function gameOver() {
+            gameRunning = false;
+            clearInterval(obstacleTimer);
+            clearInterval(coinTimer);
+            clearInterval(powerUpTimer);
+            cancelAnimationFrame(animationId);
+            
+            finalScoreElement.textContent = `Your Score: ${score}`;
+            finalCoinsElement.textContent = `Treasure Collected: ${coins}`;
+            gameOverScreen.style.display = 'flex';
+        }
+        
+        // Game loop
+        function gameLoop() {
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw background
+            drawBackground();
+            updateClouds();
+            
+            // Update and draw player
+            player.update();
+            player.draw();
+            
+            // Update and draw obstacles
+            obstacles.forEach((obstacle, index) => {
+                obstacle.update();
+                obstacle.draw();
+                
+                // Check collision with player
+                if (checkCollision(player, obstacle)) {
+                    if (player.powerUp === 'shield') {
+                        // Shield protects from one hit
+                        player.powerUp = null;
+                        player.powerUpTime = 0;
+                        powerUpIndicator.style.display = 'none';
+                        obstacles.splice(index, 1);
+                    } else {
+                        gameOver();
+                    }
+                }
+                
+                // Remove if off screen
+                if (obstacle.x + obstacle.width < 0) {
+                    obstacles.splice(index, 1);
+                }
+            });
+            
+            // Update and draw coins
+            coinItems.forEach((coin, index) => {
+                // Magnet effect
+                if (player.powerUp === 'magnet' && 
+                    Math.abs(coin.x - player.x) < 150 && 
+                    Math.abs(coin.y - player.y) < 100) {
+                    // Move coin toward player
+                    const dx = player.x + player.width/2 - (coin.x + coin.width/2);
+                    const dy = player.y + player.height/2 - (coin.y + coin.height/2);
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance > 5) {
+                        coin.x += dx * 0.1;
+                        coin.y += dy * 0.1;
+                    }
+                } else {
+                    coin.update();
+                }
+                
+                coin.draw();
+                
+                // Check collision with player
+                if (!coin.collected && checkCollision(player, coin)) {
+                    coin.collected = true;
+                    let coinValue = coin.value;
+                    
+                    // Double points power-up
+                    if (player.powerUp === 'doublePoints') {
+                        coinValue *= 2;
+                    }
+                    
+                    coins += coinValue;
+                    coinsElement.textContent = `Treasure: ${coins}`;
+                    
+                    // Show + effect
+                    ctx.fillStyle = 'white';
+                    ctx.font = '20px Arial';
+                    ctx.fillText(`+${coinValue}`, coin.x, coin.y - 10);
+                    
+                    setTimeout(() => {
+                        coinItems.splice(index, 1);
+                    }, 300);
+                }
+                
+                // Remove if off screen
+                if (coin.x + coin.width < 0) {
+                    coinItems.splice(index, 1);
+                }
+            });
+            
+            // Update and draw power-ups
+            powerUps.forEach((powerUp, index) => {
+                powerUp.update();
+                powerUp.draw();
+                
+                // Check collision with player
+                if (!powerUp.collected && checkCollision(player, powerUp)) {
+                    powerUp.collected = true;
+                    player.powerUp = powerUp.type;
+                    player.powerUpTime = powerUp.duration;
+                    
+                    // Show power-up indicator
+                    powerUpIndicator.textContent = `${powerUp.name}: ${Math.ceil(powerUp.duration/60)}s`;
+                    powerUpIndicator.style.display = 'block';
+                    powerUpIndicator.classList.add('power-up-active');
+                    
+                    // Remove power-up
+                    powerUps.splice(index, 1);
+                }
+                
+                // Remove if off screen
+                if (powerUp.x + powerUp.width < 0) {
+                    powerUps.splice(index, 1);
+                }
+            });
+            
+            // Increase score and difficulty
+            score++;
+            scoreElement.textContent = `Score: ${score}`;
+            
+            if (score % 500 === 0) {
+                speed += 0.5;
+                if (player.powerUp !== 'slowMotion') {
+                    gameSpeed = speed;
+                }
+            }
+            
+            // Continue game loop if still running
+            if (gameRunning) {
+                animationId = requestAnimationFrame(gameLoop);
+            }
+        }
+        
+        // Event listeners
+        startBtn.addEventListener('click', startGame);
+        restartBtn.addEventListener('click', startGame);
+        
+        // Keyboard controls
+        document.addEventListener('keydown', (e) => {
+            if (!gameRunning) return;
+            
+            if ((e.key === 'ArrowUp' || e.key === 'w' || e.key === ' ') && !player.sliding) {
+                player.jump();
+            } else if ((e.key === 'ArrowDown' || e.key === 's') && !player.jumping) {
+                player.slide();
+            }
+        });
+        
+        // Touch controls
+        jumpBtn.addEventListener('click', () => {
+            if (gameRunning && !player.sliding) {
+                player.jump();
+            }
+        });
+        
+        slideBtn.addEventListener('click', () => {
+            if (gameRunning && !player.jumping) {
+                player.slide();
+            }
+        });
+    </script>
 </body>
 </html>
